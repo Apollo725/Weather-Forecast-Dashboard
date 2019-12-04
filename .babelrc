@@ -1,0 +1,24 @@
+{
+    "presets": [
+        "env"
+    ],
+    "env": {
+        "development": {
+            "presets": ["babel-preset-env", "react", "env"],
+            "plugins": ["transform-object-rest-spread", ["transform-runtime", {
+                "regenerator": true
+            }]]
+        },
+        "production": {
+            "presets": ["babel-preset-env", "react"],
+            "plugins": [
+                [
+                    "transform-react-remove-prop-types",
+                    {
+                        "mode": "wrap"
+                    }
+                ]
+            ]
+        }
+    }
+}

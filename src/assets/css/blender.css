@@ -1,0 +1,8 @@
+@font-face {
+  font-family: blender;
+  src: url('../blenderFont/blenderpro-medium-webfont.ttf') format("truetype");
+}
+
+body {
+  font-family: blender !important;
+}
